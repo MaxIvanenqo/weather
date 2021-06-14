@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Stats{% endblock %}
+
+{% block body %}
+    <div>
+        <h2>{{ city }}</h2>
+        {% for st in stats %}
+            <div>
+                <span>{{ st.applicable_date }} | {{ st.the_temp }}</span>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
